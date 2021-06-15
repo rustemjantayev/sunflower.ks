@@ -1,20 +1,21 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
 import {Layout} from 'antd';
-const {Header, Content, Footer} = Layout;
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Content from './components/Content';
 
-function App() {
-  return (
-      <>
-        <Layout>
-          <Header>Header</Header>
-          <Content>Content</Content>
-          <Footer>Footer</Footer>
-        </Layout>
-      </>
-  );
+class App extends Component {
+  state = {  }
+  render() { 
+    return ( 
+      <Layout>
+        <Header/>
+          <Content/>
+        <Footer/>
+      </Layout>
+
+     );
+  }
 }
-
 export default App;
