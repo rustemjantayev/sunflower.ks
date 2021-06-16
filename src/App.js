@@ -10,12 +10,12 @@ const App = () => {
   const [appState, setAppState]= useState({
     user:{
       name:'Rustem'
-    },
-    location:{}
+    }
   });
 
   function changeData(){
     setAppState({...appState,age:14});
+    console.log('change data');
   }
 
   return ( 
