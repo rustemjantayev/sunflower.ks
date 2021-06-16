@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+//import AppContext from './AppContext';
 
-class HomePage extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <>
-                HomePage...
-            </>
-         );
-    }
+const HomePage = () => {
+
+    //const context = useContext(AppContext); // state 
+    return ( 
+        <>
+            HomePage...
+        </>
+     );
 }
  
 export default HomePage;

@@ -1,12 +1,17 @@
-import React, { Component, createContext } from 'react';
+import React from 'react';
 import {Layout} from 'antd';
+//import AppContext from './AppContext';
 
 const {Content: LayoutContent} = Layout;
 
-const Content = () => {
+const Content = ({
+    changeHandler
+}) => {
+    //const context = useContext(AppContext); // state 
     return ( 
         <LayoutContent>
-            Content and rounting hear..
+            Content...
+            <button onClick={changeHandler}>Click</button>
         </LayoutContent>
      );
 }
