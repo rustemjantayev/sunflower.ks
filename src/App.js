@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Content from './components/Content';
 import AppContext from './components/AppContext';
+import {Switch, Route, Link, BrowserRouter as Router} from 'react-router-dom';
 
 const App = () => {
   const [appState, setAppState]= useState({
@@ -13,18 +14,15 @@ const App = () => {
     }
   });
 
-  function changeData(){
-    setAppState({...appState,age:14});
-    console.log('change data');
-  }
-
   return ( 
       <AppContext.Provider value={appState}>
-        <Layout>
-          <Header/>
-            <Content changeHandler={changeData}/>
-          <Footer/>
-        </Layout>
+        <Router>
+          <Layout>
+            <Header/>
+            <Content/>
+            <Footer/>
+          </Layout>
+        </Router>
       </AppContext.Provider>
   );
 }
