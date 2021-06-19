@@ -14,7 +14,7 @@ const {Content: LayoutContent} = Layout;
 const Content = () => {
     //const context = useContext(AppContext); // state 
     return ( 
-        <LayoutContent>
+        <LayoutContent  style={{ padding: '50px 50px' }}>
             <Switch>
                 <Route exact path="/">
                     <HomePage/>
